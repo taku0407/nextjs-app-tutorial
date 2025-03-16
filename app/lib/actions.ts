@@ -124,7 +124,8 @@ export async function authenticate(
         default:
           return 'Something went wrong.';
       }
-    }
+    }    
+    console.error(error);
     throw error;
   }
 }
